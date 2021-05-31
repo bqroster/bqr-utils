@@ -1,14 +1,14 @@
 {
   "name": "bqroster-utils",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Some js utils functions",
   "author": "Jose Burgos <jose@bqroster.com>",
   "license": "MIT",
-  "main": "build/index.js",
+  "main": "index.js",
   "scripts": {
     "watch": "watch 'npm run dist' src",
     "build": "babel src --out-file build/index-babel.js",
-    "uglify": "uglifyjs --compress --mangle --output ./build/index.js -- ./build/index-babel.js",
+    "uglify": "uglifyjs --compress --mangle --output ./index.js -- ./build/index-babel.js",
     "builder": "npm run build && npm run uglify",
     "dist": "npm run clean && npm run builder && npm run rollup:unpkg & npm run rollup:es & npm run rollup:umd",
     "test": "jest",
