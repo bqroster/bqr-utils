@@ -1,4 +1,7 @@
 .gitignore
 .idea
+dist/
 __tests__
-dist
+jest.config.js
+babel.config.js
+rollup.config.js
