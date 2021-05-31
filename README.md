@@ -1,7 +1,7 @@
 ### Install
 
 ```
-npm install bqr-utils --save
+npm install bqroster-utils --save
 ```
 
 ### Usage
